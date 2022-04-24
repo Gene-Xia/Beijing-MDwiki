@@ -1,0 +1,14 @@
+@media screen and (min-width: 190px) {
+  #content {
+    font-size:150% !important;
+  }
+  table {
+    font-size: 100% !important;
+  }
+  td {
+    vertical-align: top;
+  }
+  blockquote {
+    font-size: 100% !important;
+  }
+}

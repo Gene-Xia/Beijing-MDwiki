@@ -1,0 +1,11 @@
+@media screen and (max-width: 767px) {
+    #content {
+      font-size:250% !important;
+    }
+    table {
+      font-size: 100% !important;
+    }
+    blockquote {
+      font-size: 100% !important;
+    }
+  }

@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>全民皆恶还有多远？</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="全民皆恶, 法制, 负面" />
+    <link rel=”icon” href=”favicon.ico” type=”image/x-icon”>
+    <link rel="stylesheet" href="public-css/editormd.preview.css" />
+    <style type="text/css">
+      strong { color: brown !important; }
+      em { font-style: normal; color: green !important; }
+      td { text-align: left; vertical-align: top; word-break: break-all; }
+      blockquote { font-size: 100% !important; }
+      @media screen and (max-width: 1100px) {
+        h4 { font-size: 44px; }
+        h5 { font-size: 42px; }
+        #content { font-size: 42px !important; width: 94%; }
+        table { font-size: 90% !important;}
+        #date { width: 150px; }
+      }
+      @media screen and (min-width: 1900px) {
+        #content { font-size: 20px !important; max-width: 940px; }
+        table { font-size: 80% !important; }
+        #date { width: 90px; }
+      }
+    </style>
+    <script type="text/javascript" src="public-js/jquery.min.js"></script>
+    <script type="text/javascript" src="public-js/editormd.min.js"></script>
+    <script type="text/javascript" src="public-js/marked.min.js"></script>
+    <script type="text/javascript" src="public-js/prettify.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#source').load('index.md', function() {
+          editormd.markdownToHTML("content", {
+            //mode: "markdown",
+            htmlDecode: true,
+            markdown: document.getElementById("source").value
+          });
+        });
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="content" style="margin: 0 auto; padding: 20px"></div>
+    <textarea id="source" hidden></textarea>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+font-size:150%
+<textarea id="source" hidden></textarea>
+
+| <div style="width:80px">日期</div> | 事实 |
+
+
+
+<script type="text/javascript">
+
+var reader= new FileReader();
+        //reader.readAsText('index.md');
+        reader.onload = function() {
+          var text = reader.text;
+        }
+
+        //reader.result;
+
+
+//$(function() {
+    // $('#source').load('index.md');
+    // var converter = new showdown.Converter();
+    // var text = document.getElementById("#source").value;
+    // var html = converter.makeHtml(text);
+    // //alert(html);
+    // document.getElementById("Content").innerHTML = html;
+    // var reader= new FileReader();
+    // reader.readAsText('index.md');
+    // reader.onload = function() {
+    //   var text = reader.text;
+    //   var html = converter.makeHtml(text);
+    //   document.getElementById("Content").innerHTML = html;
+    // }
+  //})
+//</script>
+
+<script type="text/javascript">
+  function convert() {
+    var text = document.getElementById("source").value;
+    var converter = new showdown.Converter();
+    var html = converter.makeHtml(text);
+    document.getElementById("Content").innerHTML = html;
+  }
+//      window.onload = convert();
+</script>
+
+
+<div id="source" hidden></div>
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="refresh" content="1; url=全民皆恶还有多远-20220316.md">
+  <link rel="icon" href="../../../../favicon.ico">
+
+  <title>全民皆恶离我们有多远？-我的一封公开信</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="editor.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="narrow-jumbotron.css" rel="stylesheet">
+
+  <!-- Animate on scroll library -->
+  <script src="aos.js"></script>
+  <link href="aos.css" rel="stylesheet">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+  <style id="vvvebjs-styles"></style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <section class="jumbotron container bg-light p-4" id="jumbotron">
+    <div class="container">
+      <h3 data-aos="fade-up" data-aos-delay="200" class="">全民皆恶离我们有多远？</h3>
+      <h3 data-aos="fade-up" data-aos-delay="200" class="">我的一封公开信</h3>
+      <p>之所以写下这么一封公开信，是因为我已经走投无路了，希望通过舆论的监督或者好心人的指点得到一点帮助。为了不显得突兀，我还是花一点时间，先介绍一下背景吧。</p>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500" data-vvveb-disabled-area="">
+        <h4>一、事实说明</h4>
+        <p data-vvveb-edit-exception="">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis
+          consectetur purus sit amet fermentum.</p>
+
+        <h4>Subheading</h4>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+    <p class="lead" data-aos="fade-up" data-aos-delay="300">Cras justo odio, dapibus ac facilisis in, egestas eget
+        quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+        risus.</p>
+
+      <p><a class="btn btn-lg btn-primary" href="#" role="button" data-aos="fade-up" data-aos-delay="100">Sign up
+          today</a></p>
+    </div>
+  </section>
+
+  <section id="marketing">
+    <div class="container">
+      <div class="row marketing">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500" data-vvveb-disabled-area="">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p data-vvveb-edit-exception="">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis
+            consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p data-vvveb-disabled="">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis
+            consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="page-footer" data-aos="fade-up" data-aos-delay="700">
+    <div class="container">
+      <p>© Company 2017</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="public/jquery.min.js"></script>
+    <script type="text/javascript" src="public/showdown.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#source').load('index.md', function(){
+          var text = document.getElementById("source").value;
+          var converter = new showdown.Converter({tables: true, simplifiedAutoLink: true, simpleLineBreaks: true, openLinksInNewWindow: true, backslashEscapesHTMLTags: true, emoji: true});
+          converter.setFlavor('github');
+          document.getElementById("content").innerHTML = converter.makeHtml(text);
+        });
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="content" style="width: 90%; max-width:980px; margin:0 auto; padding: 20px"></div>
+    <textarea id="source" hidden></textarea>
+  </body>
+</html>
